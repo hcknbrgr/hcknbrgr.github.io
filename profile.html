@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daniel Hackenberger - Resume</title>
+<style>
+    :root {
+        --accent:#0ea5a4;
+        --bg:#0f172a;
+        --card:#111827;
+        color-scheme:dark;
+    }
+    html, body {
+        height: 100%;
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    body {
+        background: linear-gradient(180deg, #071025 0%, #071827 60%);
+        background-attachment: fixed;
+        color: #e6eef6;
+        padding: 32px;
+    }
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 28px;
+    }
+    .avatar {
+        width: 84px;
+        height: 84px;
+        border-radius: 12px;
+        background: #0b1220;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        color: var(--accent);
+        font-size: 28px;
+    }
+    h1 {
+        margin: 0;
+        font-size: 28px;
+    }
+    p.lead {
+        margin: 6px 0 0;
+        color: #bcd3df;
+    }
+    section {
+        margin-bottom: 40px;
+    }
+    h2 {
+        font-size: 20px;
+        margin-bottom: 12px;
+        color: var(--accent);
+    }
+    .card {
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.03);
+        padding: 16px;
+        border-radius: 12px;
+        backdrop-filter: blur(6px);
+        margin-bottom: 16px;
+    }
+    .card h3 {
+        margin: 0 0 6px;
+        font-size: 18px;
+    }
+    .card small {
+        display: block;
+        color: #9fb3be;
+        margin-bottom: 6px;
+    }
+    ul {
+        margin: 0;
+        padding-left: 20px;
+    }
+    li {
+        margin-bottom: 6px;
+        font-size: 14px;
+    }
+    footer {
+        margin-top: 32px;
+        color: #9fb3be;
+        font-size: 13px;
+    }
+    @media (max-width: 520px) {
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .avatar {
+            width: 64px;
+            height: 64px;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="avatar">DH</div>
+        <div>
+            <h1>Daniel Hackenberger</h1>
+            <p class="lead">Software Engineer • Beaufort, SC</p>
+            <p class="lead"><a href="mailto:Daniel.Hackenberger@gmail.com" style="color: var(--accent)">Daniel.Hackenberger@gmail.com</a> | <a href="https://linkedin.com/in/daniel-hackenberger" style="color: var(--accent)">LinkedIn</a></p>
+        </div>
+    </header>
+
+    <section>
+        <h2>Summary</h2>
+        <div class="card">
+            Experienced United States Marine leader working in software development. Committed to delivering high-quality software solutions with a forward-thinking organization. Skilled in problem solving, analysis, and management, with proven results in increasing efficiency and streamlining processes.
+        </div>
+    </section>
+
+    <section>
+        <h2>Work Experience</h2>
+        <div class="card">
+            <h3>Software Engineer</h3>
+            <small>Compass Global Business Services, LLC • Remote • Mar 2025 - Present</small>
+            <ul>
+                <li>Enhanced automated testing workflows using Selenium on the One Network Neo platform.</li>
+                <li>Improved test pass rate from 52% to 66% by refactoring existing test base.</li>
+                <li>Leveraged Jenkins and Zephyr to monitor and report test performance.</li>
+                <li>Developed internal libraries to streamline test automation.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Software Engineer</h3>
+            <small>Duality Systems • Remote • Jun 2024 - Dec 2024</small>
+            <ul>
+                <li>Developed front-end, back-end, and ML modules using Python, Django, and GraphQL.</li>
+                <li>Increased genetic algorithm fitness score by 40% with parallelism optimizations.</li>
+                <li>Improved test coverage from 10% to 50% using PyTest.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Software Developer</h3>
+            <small>Self-Employed • Remote • Jan 2019 - Jun 2024</small>
+            <ul>
+                <li>Created custom software solutions for clients.</li>
+                <li>Developed computer vision app to identify Simpsons characters with 92% accuracy.</li>
+                <li>Built USMC Physical Fitness Test calculator for Google Play Store (5★ rating).</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Logistics Manager</h3>
+            <small>United States Marine Corps • Beaufort • Jun 2018 - Jun 2024</small>
+            <ul>
+                <li>Managed logistics for hundreds of events with 100% on-time completion.</li>
+                <li>Reduced inspection time by 70% through improved procurement tracking.</li>
+                <li>Led a team of five managers to maintain perfect performance record.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Core Skills</h2>
+        <div class="card">
+            Python, Java, Django, SQL, Agile (Scrum/Kanban), GitHub, Machine Learning (Genetic Algorithms, Reinforcement Learning)
+        </div>
+    </section>
+
+    <section>
+        <h2>School Projects</h2>
+        <div class="card">
+            <h3>Cart-pole DQN Model</h3>
+            <ul>
+                <li>Developed reinforcement learning model using PyTorch to balance a cart-pole system.</li>
+                <li>Integrated with Arduino for real-time control and feedback.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Simpsons Character Identifier</h3>
+            <ul>
+                <li>Built computer vision CNN model with TensorFlow/Keras achieving 92% accuracy.</li>
+                <li>Implemented preprocessing, training, validation, and optimization pipeline.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="card">
+            <strong>Master of Science • Computer Science</strong><br>Dakota State University • Dec 2023
+        </div>
+        <div class="card">
+            <strong>Bachelor of Science • Computer Information Systems</strong><br>Post University • May 2017
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Daniel Hackenberger • Vibing my way to better designs
+    </footer>
+</div>
+</body>
+</html>
