@@ -1,3 +1,111 @@
-<html>
-    Hellow World
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>hcknbrgr — Projects</title>
+  <style>
+    :root{--accent:#0ea5a4;--bg:#0f172a;--card:#111827;color-scheme:dark}
+    html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial}
+    body{background:linear-gradient(180deg,#071025 0%, #071827 60%);color:#e6eef6;padding:32px}
+    .container{max-width:1100px;margin:0 auto}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:28px}
+    .avatar{width:84px;height:84px;border-radius:12px;background:#0b1220;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:28px}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 0;color:#bcd3df}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin-top:20px}
+    .card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.03);padding:16px;border-radius:12px;backdrop-filter:blur(6px);min-height:150px;display:flex;flex-direction:column;justify-content:space-between}
+    .card h3{margin:0 0 6px;font-size:18px}
+    .lang{font-size:12px;color:#9fb3be}
+    .desc{margin:10px 0 0;color:#cfe6ef;font-size:14px;flex:1}
+    .meta{display:flex;justify-content:space-between;align-items:center;margin-top:12px}
+    .btn{background:var(--accent);color:#042022;padding:8px 10px;border-radius:8px;text-decoration:none;font-weight:600}
+    footer{margin-top:32px;color:#9fb3be;font-size:13px}
+    .contact{margin-top:10px}
+    @media (max-width:520px){header{flex-direction:column;align-items:flex-start} .avatar{width:64px;height:64px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">HK</div>
+      <div>
+        <h1>hcknbrgr — Projects</h1>
+        <p class="lead">A curated list of projects pulled from <a href="https://github.com/hcknbrgr" target="_blank" rel="noopener" style="color:var(--accent)">github.com/hcknbrgr</a>. Click any card to open the repository.</p>
+      </div>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <div>
+          <h3>usmc</h3>
+          <div class="lang">JavaScript • HTML • CSS</div>
+          <p class="desc">Mobile-friendly web app with static assets (HTML/CSS/JS). Contains USMC-themed UI files and an index.html to run locally.</p>
+        </div>
+        <div class="meta"><a class="btn" href="https://github.com/hcknbrgr/usmc" target="_blank">View on GitHub</a><div style="font-size:12px;color:#9fb3be">Updated in repo</div></div>
+      </article>
+
+      <article class="card">
+        <div>
+          <h3>PFTCalculator</h3>
+          <div class="lang">Java (Android/Gradle)</div>
+          <p class="desc">USMC PT Calculator — an Android/Java project with app sources and Gradle build setup. Great example of a mobile utility app.</p>
+        </div>
+        <div class="meta"><a class="btn" href="https://github.com/hcknbrgr/PFTCalculator" target="_blank">View on GitHub</a><div style="font-size:12px;color:#9fb3be">Android project</div></div>
+      </article>
+
+      <article class="card">
+        <div>
+          <h3>Cartpole</h3>
+          <div class="lang">Python</div>
+          <p class="desc">Reinforcement-learning / control experiment (CartPole). Contains Python notebooks / scripts used for training or simulating the environment.</p>
+        </div>
+        <div class="meta"><a class="btn" href="https://github.com/hcknbrgr/Cartpole" target="_blank">View on GitHub</a><div style="font-size:12px;color:#9fb3be">ML / RL demo</div></div>
+      </article>
+
+      <article class="card">
+        <div>
+          <h3>plannerBackend</h3>
+          <div class="lang">Python</div>
+          <p class="desc">Backend API for a scheduling/planner app — contains server code and APIs used by a front-end planner project.</p>
+        </div>
+        <div class="meta"><a class="btn" href="https://github.com/hcknbrgr/plannerBackend" target="_blank">View on GitHub</a><div style="font-size:12px;color:#9fb3be">API / backend</div></div>
+      </article>
+
+      <article class="card">
+        <div>
+          <h3>plannerfrontend</h3>
+          <div class="lang">JavaScript</div>
+          <p class="desc">Front-end for the planner app — likely built with a modern JS framework and communicates with plannerBackend to manage events and schedules.</p>
+        </div>
+        <div class="meta"><a class="btn" href="https://github.com/hcknbrgr/plannerfrontend" target="_blank">View on GitHub</a><div style="font-size:12px;color:#9fb3be">UI / frontend</div></div>
+      </article>
+
+      <article class="card">
+        <div>
+          <h3>first-contributions (fork)</h3>
+          <div class="lang">Various</div>
+          <p class="desc">A fork of the "first-contributions" repository — helpful for newcomers to practice contributing to open source.</p>
+        </div>
+        <div class="meta"><a class="btn" href="https://github.com/hcknbrgr/first-contributions" target="_blank">View on GitHub</a><div style="font-size:12px;color:#9fb3be">Educational</div></div>
+      </article>
+
+      <!-- Placeholder cards for other repositories -->
+      <article class="card">
+        <div>
+          <h3>Other repos</h3>
+          <div class="lang">—</div>
+          <p class="desc">You have additional repositories on your account. Consider adding short descriptions to each repo (via GitHub's "About" field) to make this page more useful to visitors.</p>
+        </div>
+        <div class="meta"><a class="btn" href="https://github.com/hcknbrgr?tab=repositories" target="_blank">See all repos</a><div style="font-size:12px;color:#9fb3be">View on GitHub</div></div>
+      </article>
+
+    </section>
+
+    <footer>
+      <div>Want changes? Reply here with a preferred contact email and which projects to highlight. You can also send short descriptions for each repo and I'll update the page.</div>
+      <div class="contact">Contact: <em>replace-with-your-email@example.com</em></div>
+    </footer>
+  </div>
+</body>
 </html>
